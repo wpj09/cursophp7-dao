@@ -37,6 +37,7 @@ $usuario->update("professor", "!@#$&*");
 echo $usuario;
 */
 
+//excluindo usuario
 $usuario = new Usuario();
 
 $usuario->loadById(10);
