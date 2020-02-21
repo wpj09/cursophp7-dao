@@ -2,16 +2,16 @@
 
 require_once("config.php");
 
-//carrega um usuário
+//carrega um usuario
 //$root = new Usuario();
 //$root->loadbyId(3);
 //echo $root;
 
-//carrega uma lista de usuarios
+//carrega uma lista de usuario
 //$lista = Usuario::getList();
 //echo json_encode($lista);
 
-//carrega uma lista de usuarios buscando pelo login
+//carrega uma lista de usuario buscando pelo login
 //$search = Usuario::search("jo");
 //echo json_encode($search);
 
@@ -27,11 +27,22 @@ require_once("config.php");
 
 //echo $aluno;
 
-$usuario = new Usuario();
+//Alterar um usuario
+/*$usuario = new Usuario();
 
 $usuario->loadById(10);
 
 $usuario->update("professor", "!@#$&*");
 
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(10);
+
+$usuario->delete();
+
+echo $usuario;
+
  ?>
